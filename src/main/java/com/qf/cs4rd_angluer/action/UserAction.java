@@ -20,7 +20,7 @@ public class UserAction {
 //    @CrossOrigin(origins = "*")
     @ResponseBody
     public String addUser(@RequestBody User user){
-        System.out.println(user+"sss");
+        System.out.println(user);
         userService.addUser(user);
         return "add success";
     }
